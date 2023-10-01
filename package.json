@@ -1,0 +1,13 @@
+ {
+  "name": "transfer-pactum-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mrience/transfer-pactum-tests.git",
+  "author": "mateusz <kucka.mateusz14@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "jest": "^29.7.0",
+    "pactum": "^3.5.1"
+  }
+}
