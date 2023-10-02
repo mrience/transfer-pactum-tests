@@ -88,7 +88,7 @@ describe('delivery options', () => {
         const options = response.json.options;
         const now = options.find(option => option.code === 'now');
 
-        expect(now.availability.isAvailable).toBe(true);
+        expect(now.availability.isAvailable).toBe(false);
     });
 
     test('should set Standard option unavailable for exceeded max amount', async () => {
@@ -103,7 +103,7 @@ describe('delivery options', () => {
         const options = response.json.options;
         const now = options.find(option => option.code === 'now');
 
-        expect(now.availability.isAvailable).toBe(true);
+        expect(now.availability.isAvailable).toBe(false);
     });
 
     test('should not be possible to send less than 1EUR', async () => {
